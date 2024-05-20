@@ -92,7 +92,6 @@ galleryList.addEventListener('click', event => {
     event.preventDefault();
     const target = event.target;
     if (target.classList.contains('gallery-image')) {
-        console.log(target.dataset.source);
         const instance = basicLightbox.create(`
             <img src="${target.dataset.source}" alt="${target.alt}">
         `);
